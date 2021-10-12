@@ -16,6 +16,35 @@ body {
     line-height: 1.7;
     }
 
+    h1,
+    h2,
+    h3,
+    ul,
+    li,
+    p {
+        margin: 0;
+        padding: 0;}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+outline: 2px solid tomato;}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;}
+
 /*============ Header ===========*/
 
     /* logo header*/
@@ -37,7 +66,7 @@ body {
     .site-nav-link:focus {color: var(--accent-color);}
     .site-nav-link.current {color: var(--accent-color);}
 
-         /* auth nav */
+        /* auth nav */
     .auth-nav-link {color: var(--primary-text-color);
         font-weight: 500;
         line-height: 1.14;
@@ -46,8 +75,7 @@ body {
     .auth-nav-link:focus {color: var(--accent-color);}
     
     .list {list-style: none;
-    padding: 0;
-    margin: 0;}
+    }
     .link {text-decoration: none;}
 
     /*========== Hero========== */
@@ -59,7 +87,9 @@ body {
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        letter-spacing: 0.06em;}
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        width: 696px;}
         
     .primery-button {
         font-weight: 700;
@@ -68,7 +98,9 @@ body {
         letter-spacing: 0.06em;
         background-color: var(--accent-color);
         color: #ffffff;
-        cursor: pointer;}
+        cursor: pointer;
+        margin-bottom: 200px;
+        }
 
     .primery-button:hover,
     .primery-button:focus {background-color: #118CE8;
