@@ -167,12 +167,19 @@ body {
         margin-bottom: 10px;}
 
     /* feature */
-    .feature-list {display: flex;}
+    .feature-list {display: flex;
+        justify-content: space-between;}
 
     .feature-list .item {width: 270px;
         height: 101px;}
+    
+    /* business-list */
+    .business-list {display: flex;
+        justify-content: space-between;}
 
         /* Team  */
+    .team-list {display: flex;
+        justify-content: space-between}
     .team {background-color: var(--secondary-bg-color);}
     .team-list-text {font-weight: 400;
         font-size: 16px;
@@ -190,7 +197,7 @@ body {
         letter-spacing: 0.03em;
         color: #2196F3;
         }
-        .logo-light {color: #ffffff;}
+    .logo-light {color: #ffffff;}
 
     .footer-adress {color: #ffffff;}
     .footer-mail,
@@ -207,6 +214,7 @@ body {
     /* =========Portfolio=========== */
 
     /* filter */
+    .portfolio-filter {display: flex;}
     .portfolio-button {
         font-weight: 500;
         font-size: 16px;
