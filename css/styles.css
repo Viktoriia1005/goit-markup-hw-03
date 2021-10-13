@@ -48,32 +48,55 @@ body {
 
 /*============ Header ===========*/
 
+    /* all-nav */
+
+    .page-header .container {display: flex;
+    align-items: center;
+    justify-content: space-between}
+    
+    .main-nav {display: flex;}
+    
     /* logo header*/
-    .logo-header {font-family: Raleway;
+
+    .logo-header {display: block;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        font-family: Raleway;
         font-weight: bold;
         font-size: 26px;
         line-height: 1.2;
         letter-spacing: 0.03em;
-        color: #2196F3;
-    }
+        color: #2196F3;}
+
     .logo-dark {color: #000000;}
 
         /* site nav */
-    .site-nav {display: flex;}
+
+    .site-nav {display: flex;
+    margin-left: 93px;}
     .site-nav .item + .item {margin-left: 50px;}
-    
-    
-    
-    .site-link {color: var(--primary-title-color);
+        
+    .site-link {display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        color: var(--primary-title-color);
         font-weight: 500;
         line-height: 1.17;
-        letter-spacing: 0.02em;} 
+        letter-spacing: 0.02em;}
+        
     .site-link:hover,
     .site-link:focus {color: var(--accent-color);}
     .site-link.current {color: var(--accent-color);}
 
         /* auth nav */
-    .auth-link {color: var(--primary-text-color);
+
+    .auth-nav {display: flex;}
+    .auth-nav .item + .item {margin-left: 50px;}
+    .auth-link {display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: var(--primary-text-color);
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;}
@@ -142,6 +165,12 @@ body {
         line-height: 1.2;
         text-align: center;
         margin-bottom: 10px;}
+
+    /* feature */
+    .feature-list {display: flex;}
+
+    .feature-list .item {width: 270px;
+        height: 101px;}
 
         /* Team  */
     .team {background-color: var(--secondary-bg-color);}
