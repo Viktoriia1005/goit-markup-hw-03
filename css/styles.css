@@ -16,21 +16,24 @@ body {
     line-height: 1.7;
     }
 
-    h1,
-    h2,
-    h3,
-    p {
-        margin: 0px;
-        margin: 0px;
-        }
-    ul {margin: 0px;
-    padding: 0px;}
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+button {cursor: pointer;}
 
-        /* container */
+    /* container */
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
     }
 
 .visually-hidden {
@@ -128,7 +131,6 @@ body {
         letter-spacing: 0.06em;
         background-color: var(--accent-color);
         color: #ffffff;
-        cursor: pointer;
         }
 
     .primery-button:hover,
@@ -214,15 +216,20 @@ body {
     /* =========Portfolio=========== */
 
     /* filter */
-    .portfolio-filter {display: flex;}
+    .portfolio-filter {display: flex;
+        justify-content: center;
+        margin-bottom: 50px;}
+    .portfolio-filter .btn + .btn {margin-left: 8px;}
     .portfolio-button {
         font-weight: 500;
         font-size: 16px;
+        padding: 6px 22px;
+        min-width:auto;
         line-height: 1,6;
         text-align: center;
         background-color: var(--button-bg-color);
         color: var(--primary-title-color);
-        cursor: pointer;}
+        border: none;}
 
     .portfolio-button:hover,
     .portfolio-button:focus {color: var(--primary-bg-color);
