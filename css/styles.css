@@ -27,6 +27,7 @@ ul {
     padding: 0px;
 }
 button {cursor: pointer;}
+img {display: block;}
 
     /* container */
 .container {
@@ -51,28 +52,28 @@ button {cursor: pointer;}
 
 /*============ Header ===========*/
 
-    /* all-nav */
-
-    .page-header .container {display: flex;
-    align-items: center;
-    justify-content: space-between}
-    
-    .main-nav {display: flex;}
-    
     /* logo header*/
 
-    .logo-header {display: block;
-        padding-top: 24px;
-        padding-bottom: 25px;
-        font-family: Raleway;
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        color: #2196F3;}
+.logo-header {display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #2196F3;}
+.logo-dark {color: #000000;}
 
-    .logo-dark {color: #000000;}
+        /* all-nav */
 
+    .page-header {border: 1px solid #ECECEC;}
+    .page-header .container {display: flex;
+    align-items: center;
+    justify-content: space-between
+    }
+    .main-nav {display: flex;}
+        
         /* site nav */
 
     .site-nav {display: flex;
@@ -94,7 +95,8 @@ button {cursor: pointer;}
 
         /* auth nav */
 
-    .auth-nav {display: flex;}
+    .auth-nav {display: flex;
+    }
     .auth-nav .item + .item {margin-left: 50px;}
     .auth-link {display: block;
         padding-top: 32px;
@@ -111,17 +113,19 @@ button {cursor: pointer;}
     .link {text-decoration: none;}
 
     /*========== Hero========== */
-    .hero {background-color: #2F303A;}
+    .hero {background-color: #2F303A;
+        text-align: center;
+    }
 
     .hero-title {color: var(--primary-bg-color);
         margin-top: 0;
         margin-bottom: 30px;
+        width: 696px;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        text-align: center;
         }
         
     .primery-button {
@@ -139,7 +143,7 @@ button {cursor: pointer;}
 
     /*========= Main ==========*/
 
-    /* section */
+        /* section */
 
     .section {padding-top: 94px;
     padding-bottom: 94px;}
@@ -147,7 +151,7 @@ button {cursor: pointer;}
     .section.other-padding {padding-top: 0px;
     padding-bottom: 101px;}
 
-    /* title */
+        /* title */
 
     .section-title {color: var(--primary-title-color);
         font-weight: 700;
@@ -168,14 +172,14 @@ button {cursor: pointer;}
         text-align: center;
         margin-bottom: 10px;}
 
-    /* feature */
-    .feature-list {display: flex;
+        /* feature */ 
+    .feature-list {display: flex;}
         justify-content: space-between;}
 
     .feature-list .item {width: 270px;
         height: 101px;}
     
-    /* business-list */
+        /* business-list */
     .business-list {display: flex;
         justify-content: space-between;}
 
@@ -191,7 +195,7 @@ button {cursor: pointer;}
     /*============ Footer============ */
     .footer {background-color: #2F303A;}
 
-    /* logo footer */
+        /* logo footer */
     .logo-footer {font-family: Raleway;
         font-weight: 700;
         font-size: 26px;
@@ -215,7 +219,7 @@ button {cursor: pointer;}
 
     /* =========Portfolio=========== */
 
-    /* filter */
+        /* filter */
     .portfolio-filter {display: flex;
         justify-content: center;
         margin-bottom: 50px;}
@@ -235,7 +239,7 @@ button {cursor: pointer;}
     .portfolio-button:focus {color: var(--primary-bg-color);
         background-color: var(--accent-color);}
 
-    /* Work */
+        /* Work */
     .work-list {display: flex;
     flex-wrap: wrap;}
 
