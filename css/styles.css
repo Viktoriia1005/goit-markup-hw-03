@@ -113,12 +113,13 @@ img {display: block;}
     .link {text-decoration: none;}
 
     /*========== Hero========== */
-    .hero {background-color: #2F303A;
+    .hero {padding: 200px 0;
+        background-color: #2F303A;
         text-align: center;
     }
 
     .hero-title {color: var(--primary-bg-color);
-        margin-top: 0;
+        margin: 0 auto;
         margin-bottom: 30px;
         width: 696px;
         font-weight: 900;
@@ -173,8 +174,8 @@ img {display: block;}
         margin-bottom: 10px;}
 
         /* feature */ 
-    .feature-list {display: flex;}
-        justify-content: space-between;}
+    .feature-list {display: flex;
+        justify-content: space-between}
 
     .feature-list .item {width: 270px;
         height: 101px;}
