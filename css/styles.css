@@ -215,7 +215,8 @@ height: auto;}
     }
 
         /* logo footer */
-    .logo-footer {margin-bottom: 20px;
+    .logo-footer {display: block;
+        margin-bottom: 20px;
         font-family: Raleway;
         font-weight: 700;
         font-size: 26px;
